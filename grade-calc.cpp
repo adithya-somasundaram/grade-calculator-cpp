@@ -1,3 +1,5 @@
+#include "calc.hpp"
+
 #include <iostream>
 
 int main()
