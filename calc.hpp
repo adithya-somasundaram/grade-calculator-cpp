@@ -1,6 +1,6 @@
 #ifndef CALCULATIONS
 #define CALCULATIONS
 
-void remainingGrades();
+void remainingGrades(double grade, double percent);
 
 #endif

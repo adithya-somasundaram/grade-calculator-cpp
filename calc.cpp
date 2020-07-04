@@ -1,5 +1,5 @@
 #include <iostream>
 
-void remainingGrades(){
+void remainingGrades(double grade, double percent){
 
 }
