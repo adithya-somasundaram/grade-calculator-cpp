@@ -7,7 +7,7 @@ int main()
     std::cout << std::endl
               << "--- Welcome to my grade calculator! ---" << std::endl;
     std::cout << std::endl
-              << "Enter your grade, followed by its weight." << std::endl;
+              << "Enter your assignment grade, followed by its weight." << std::endl;
     std::cout << "Enter any non-number to continue." << std::endl;
 
     float grade, percentage, totalGrade = {0}, totalPercent = {0};
