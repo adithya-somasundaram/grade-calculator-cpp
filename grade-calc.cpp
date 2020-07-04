@@ -11,7 +11,7 @@ int main()
     std::cout << "Enter any non-number to continue." << std::endl
               << std::endl;
 
-    double grade, percentage, totalGrade, totalPercent;
+    float grade, percentage, totalGrade = {0}, totalPercent = {0};
     while (1)
     {
         std::cout << "Enter your assignment grade: ";
@@ -22,5 +22,23 @@ int main()
             std::cin.ignore(32767, '\n');
             break;
         }
+
+        std::cout << std::endl
+                  << "Enter the weight (percentage) of the grade: ";
+        std::cin >> percentage;
+        if (std::cin.fail())
+        {
+            std::cin.clear();
+            std::cin.ignore(32767, '\n');
+            break;
+        }
+        totalPercent += percentage;
+        if(percentage > 100){
+            std::cout << "Went over 100% :(";
+            return EXIT_FAILURE;
+        }
+        totalGrade += (grade * (percentage/100));
     }
+
+    std::cout << totalPercent << totalGrade;
 }
