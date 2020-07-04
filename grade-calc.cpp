@@ -8,13 +8,13 @@ int main()
               << "--- Welcome to my grade calculator! ---" << std::endl;
     std::cout << std::endl
               << "Enter your grade, followed by its weight." << std::endl;
-    std::cout << "Enter any non-number to continue." << std::endl
-              << std::endl;
+    std::cout << "Enter any non-number to continue." << std::endl;
 
     float grade, percentage, totalGrade = {0}, totalPercent = {0};
     while (1)
     {
-        std::cout << "Enter your assignment grade: ";
+        std::cout << std::endl
+                  << "Enter your assignment grade: ";
         std::cin >> grade;
         if (std::cin.fail())
         {
@@ -23,8 +23,7 @@ int main()
             break;
         }
 
-        std::cout << std::endl
-                  << "Enter the weight (percentage) of the grade: ";
+        std::cout << "Enter the weight (percentage) of the grade: ";
         std::cin >> percentage;
         if (std::cin.fail())
         {
@@ -33,12 +32,13 @@ int main()
             break;
         }
         totalPercent += percentage;
-        if(percentage > 100){
-            std::cout << "Went over 100% :(";
+        if (percentage > 100)
+        {
+            std::cout << "Went over 100% :(" << std::endl;
             return EXIT_FAILURE;
         }
-        totalGrade += (grade * (percentage/100));
+        totalGrade += (grade * (percentage / 100));
     }
-
-    std::cout << totalPercent << totalGrade;
+    remainingGrades(totalGrade, totalPercent);
+    return EXIT_SUCCESS;
 }

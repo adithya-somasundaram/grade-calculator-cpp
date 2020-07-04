@@ -1,5 +1,5 @@
 #include <iostream>
 
-void remainingGrades(double grade, double percent){
-
+void remainingGrades(float grade, float percent){
+    std::cout << grade << " " << percent;
 }
