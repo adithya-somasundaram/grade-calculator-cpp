@@ -1,0 +1,6 @@
+This application takes in the user's grades as well as grade portions
+in order to calculate what scores they need to acheive for the remaning
+percentage of the class in order to acheive every grade between an F to
+an A+. I originally wrote it in Java, and now am adapting it to C++. 
+Function headers are stored in a header file and function definitions
+are in a seperate cpp file from the main.
