@@ -1,9 +1,13 @@
+// Grade calculator by Adithya Somasundaram
+// Last modified: 7/9/2020
+
 #include "calc.hpp"
 
 #include <iostream>
 
 int main()
 {
+    // welcome messages
     std::cout << std::endl
               << "--- Welcome to my grade calculator! ---" << std::endl;
     std::cout << std::endl
